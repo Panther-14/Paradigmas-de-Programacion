@@ -1,0 +1,5 @@
+(defun reversa (lista &optional (respuesta nil))
+  (when (not lista) (return-from reversa (reverse respuesta)))
+  (push (first lista) respuesta)
+  (reversa (cdr lista) respuesta)
+)

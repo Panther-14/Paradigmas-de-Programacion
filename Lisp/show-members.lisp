@@ -1,0 +1,1 @@
+(defun show-members (a b &optional c d) (write (list a b c d)))
